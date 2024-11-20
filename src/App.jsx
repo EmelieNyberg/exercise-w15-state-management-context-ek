@@ -1,3 +1,12 @@
+// App.jsx
+
+import { Button } from "./components/Button";
+import { ThemeProvider } from "./context/ThemeContext";
+
 export const App = () => {
-  return <div className="App">Hello Coders!</div>;
+  return (
+    <ThemeProvider>
+      <Button />
+    </ThemeProvider>
+  );
 };
